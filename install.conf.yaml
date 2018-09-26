@@ -8,3 +8,5 @@
     stdin: True
     stdout: True
     description: install homebrew
+  - command: './install_brew_formulas'
+    stdout: True
