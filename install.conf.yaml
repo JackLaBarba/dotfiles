@@ -1,0 +1,10 @@
+- defaults:
+    link:
+      relink: true
+- clean: ['~']
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - command: '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+    stdin: True
+    stdout: True
+    description: install homebrew
