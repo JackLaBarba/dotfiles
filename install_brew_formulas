@@ -2,3 +2,6 @@ set -e
 
 brew install pyenv
 brew install pipenv
+brew install mysql-client
+brew install freetds
+brew install zsh
