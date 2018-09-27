@@ -9,6 +9,8 @@
     ~/.zprofile: prezto/runcoms/zprofile
     ~/.zshenv: prezto/runcoms/zshenv
     ~/.zshrc: prezto/runcoms/zshrc
+    ~/.sh_startup: sh_startup
+    ~/.aliases: aliases
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - command: '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
