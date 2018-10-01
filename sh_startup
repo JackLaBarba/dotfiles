@@ -2,8 +2,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="/opt/apache-maven-3.5.4/bin:$PATH"
 export VISUAL=code
 export EDITOR=vim
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
 
 if [[ -s "${HOME}/.aliases" ]]; then
   source "${HOME}/.aliases"
