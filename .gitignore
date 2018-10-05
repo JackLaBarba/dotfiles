@@ -1,2 +1,7 @@
 .vscode/
 .DS_store
+
+# vs code java junk
+.classpath
+.project
+.settings/

@@ -11,11 +11,16 @@
     ~/.zshrc: prezto/runcoms/zshrc
     ~/.sh_startup: sh_startup
     ~/.aliases: aliases
+    ~/.gitignore: .gitignore # use this project's gitignore as global gitignore
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+  - command: 'git config --global core.excludesfile ~/.gitignore'
+    stout: true
+    description: 'Create global .gitignore'
   - command: '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
     stdin: True
     stdout: True
     description: install homebrew
   - command: './install_brew_formulas'
     stdout: True
+  # TODO nvm install
+  # brew install yarn --without-node
