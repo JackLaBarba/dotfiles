@@ -12,3 +12,7 @@ export MAGICK_HOME=/usr/local/Cellar/imagemagick@6/6.9.10-12
 if [[ -s "${HOME}/.aliases" ]]; then
   source "${HOME}/.aliases"
 fi
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
