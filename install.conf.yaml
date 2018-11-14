@@ -12,15 +12,20 @@
     ~/.sh_startup: sh_startup
     ~/.aliases: aliases
     ~/.gitignore: .gitignore # use this project's gitignore as global gitignore
+    ~/.zprezto: prezto/
 - shell:
   - command: 'git config --global core.excludesfile ~/.gitignore'
     stout: true
     description: 'Create global .gitignore'
-  - command: '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
+  - command: 'command -v brew > /dev/null || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
     stdin: True
     stdout: True
     description: install homebrew
   - command: './install_brew_formulas'
+    stdout: True
+  - command: 'chsh -s /bin/zsh'
+    stdout: True
+  - command: './fonts/install.sh'
     stdout: True
   # TODO nvm install
   # brew install yarn --without-node
