@@ -7,3 +7,13 @@ alias gnuke="git add . && git reset --hard"
 alias gco="git checkout"
 
 alias sm="say meow"
+
+function git-bd() {
+    echo $1
+    echo $2
+    local sha="$(git merge-base $1 $2)"
+    echo $sha
+    git log --oneline --graph --decorate $1 $2 $sha^!   
+}
+
+alias d-c="docker-compose"
