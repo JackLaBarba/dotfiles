@@ -25,7 +25,5 @@
     stdout: True
   - command: 'chsh -s /bin/zsh'
     stdout: True
-  - command: './fonts/install.sh'
-    stdout: True
   # TODO nvm install
   # brew install yarn --without-node
