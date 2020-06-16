@@ -5,7 +5,7 @@ export PATH="$HOME/bin:$PATH"
 export PATH="/opt/apache-maven-3.5.4/bin:$PATH"
 export VISUAL=vim
 export EDITOR=vim
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home"
 # for Wand in ploscli
 export MAGICK_HOME=/usr/local/Cellar/imagemagick@6/6.9.10-12
 
