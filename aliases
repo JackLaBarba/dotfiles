@@ -5,7 +5,9 @@ alias gs="git status"
 alias gl="git log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)'"
 alias gnuke="git add . && git reset --hard"
 alias gco="git checkout"
-alias gpf="git push --force-with-lease"
+alias gpforce="git push --force-with-lease"
+alias gpull="git config pull.ff only"
+alias tf="terraform"
 
 alias sm="say meow"
 
@@ -18,3 +20,5 @@ function git-bd() {
 }
 
 alias d-c="docker-compose"
+alias kc="kubectl"
+
